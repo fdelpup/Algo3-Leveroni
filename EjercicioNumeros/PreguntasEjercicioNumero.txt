@@ -1,0 +1,20 @@
+Aporte de los mensajes de DD
+En un double dispatch (DD), ¿qué información aporta cada uno de los dos llamados?
+El primer dispatch aporta información sobre el receptor, mientras que el segunda habla del argumento. De esta forma se elimina los polimorfismos y se sacan los ifs.
+Lógica de instanciado
+Con lo que vieron y saben hasta ahora, ¿donde les parece mejor tener la lógica de cómo instanciar un objeto? ¿por qué? ¿Y si se crea ese objeto desde diferentes lugares y de diferentes formas? ¿cómo lo resuelven?
+En un mensaje de inicialización definido en la clase que debe crear estas instancias de los objetos. Se resolvería sacando polimorfismos y mejorarlo aplicando un switch dinámico. 
+Nombres de las categorías de métodos
+Con lo que vieron y trabajaron hasta ahora, ¿qué criterio están usando para categorizar métodos?
+Nosotros categorizamos los métodos dependiendo de la funcionalidad que debe responder el mensaje creado. Ademas, pensamos que cuando un mensaje debería ser llamado por otros métodos para solucionar polimorfismos, este debería estar en una categoría privada de la clase para evitar que se use indebidamente 
+Subclass Responsibility
+Si todas las subclases saben responder un mismo mensaje, ¿por qué ponemos ese mensaje sólo con un “self subclassResponsibility” en la superclase? ¿para qué sirve?
+Esto lo hacemos en la superclase ya que delega la responsabilidad hacia sus subclase correspondiente. Esto sirve para que a cada subclase le corresponda un método diferente para el mismo mensaje.
+
+
+No rompas
+¿Por qué está mal/qué problemas trae romper encapsulamiento?
+
+Los problemas que trae romper encapsulamiento son que si dejamos que un objeto conozca algún colaborador interno de otro, estos podrían modificarlo cuando no es debido y puede generar problemas o errores mas adelante.
+
+
