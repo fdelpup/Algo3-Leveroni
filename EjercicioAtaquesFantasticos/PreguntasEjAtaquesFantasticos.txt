@@ -1,0 +1,8 @@
+1. ¿Qué crítica le harías al protocolo de #estaHerido y #noEstaHerido? (en vez de tener solo el mensaje #estaHerido y hacer “#estaHerido not” para saber la negación)
+2. ¿Qué opinan de que para algunas funcionalidades tenemos 3 tests para el mismo comportamiento pero aplicando a cada uno de los combatientes (Arthas, Mankrik y Olgra)
+3. ¿Cómo modelaron el resultado de haber desarrollado un combate? ¿qué opciones consideraron y por qué se quedaron con la que entregaron y por qué descartaron a las otras?
+
+1) La crítica que le haría al protocolo de #estaHerido y #noEstaHerido es que hay código similar para algo que puede ser solucionado con una simple negación.
+2) Nos parece correcto ya que se estarían comprobando que todos los objetos tengan un comportamiento correcto, pero si al momento de implementarlo se usan hijos de un combatiente, pierde el sentido ya que todos deberían funcionar correctamente. 
+3) Nosotros lo modelamos mediante un objeto ya que al contrario a otras opciones que consideramos como la de representar al resultado como una colección o un colaborador interno, daba lugar a una solución más intuitiva y facilitaba algunos funcionamientos, además de no romper encapsulamiento. 
+ 
