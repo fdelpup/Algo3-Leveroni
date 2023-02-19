@@ -1,5 +1,5 @@
 # Algo3-Leveroni
-Repo Algo3 Curso Leveroni FIUBA
+Repo Algo3 Curso Leveroni FIUBA 2do Cuatrimestre 2022
 
 # Lenguaje del Curso - Smalltalk (Lenguaje orientado a Objetos)
 
